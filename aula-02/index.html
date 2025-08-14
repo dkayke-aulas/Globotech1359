@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-size: 16px;
+            color: #4a4a4a;
+        }
+
+        h1 {
+            color: #123aeb;
+        }
+
+        h2 {
+            color: #06855b;
+        }
+
+        h3 {
+            color: #eb9c12;
+        }
+
+        /* input:not([type="radio"]) {
+            display: block;
+        } */
+        
+        input {
+            display: block;
+        }
+
+        input[type="radio"] {
+            display: inline;
+        }
+
+        #btn-div {
+            background-color: #caae0a;
+            border: 1px solid;
+            border-radius: 8px;
+            width: max-content;
+            padding: 4px;
+            margin: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Aqui é a tag paragraph</p>
+
+    <h1>Dandan News</h1>
+    <h3>Osasco, 13 de agosto de 2025</h3>
+    <h2>Preço da banana cai 47% em todo território nacional</h2>
+    <h4>Veja mais na página 10</h4>
+
+    <span>Esse é o span</span>
+    <span>Esse é o span</span>
+
+    <br>
+    <br>
+
+    <label for="input-nome">Nome completo</label>
+    <input id="input-nome" name="nome" placeholder="Nome completo" />
+
+    <br>
+    <br>
+
+    <label>
+        Banana
+        <input name="banana">
+    </label>
+
+    <p>
+        Dannyel&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;é o melhor!
+    </p>
+
+    <pre>
+        Chove
+                Chuva
+            Chove
+    Sem
+                                Parar
+    </pre>
+
+
+    <b>Bold</b> <br>
+    <i>Italic</i> <br>
+    <strong>Strong</strong> <br>
+    <u>Underline</u> <br>
+    <p>
+        H<sub>2</sub>O
+    </p>
+    <p>
+        m<sup>3</sup>
+    </p>
+
+
+    <hr>
+
+    <ol start="10" type="I">
+        <li>Banana</li>
+        <li>Melancia</li>
+        <li>Cajú</li>
+        <li>Limão</li>
+        <li>Mexerica</li>
+        <li>Fruta do conde</li>
+        <li>Abacaxi</li>
+    </ol>
+
+    <ul type="square">
+        <li>Iane</li>
+        <li>Bernardo</li>
+        <li>Priscila</li>
+        <li>Rafael</li>
+        <li>Beatriz</li>
+        <li>Ren</li>
+        <li>Warley</li>
+    </ul>
+
+    <hr>
+
+
+
+
+
+
+    <form>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+
+            <label for="nome">Nome</label>
+            <input id="nome" type="text" required>
+
+            <label for="idade">Idade</label>
+            <input id="idade" type="number">
+
+            <label for="e-mail">E-mail</label>
+            <input id="e-mail" type="email" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+
+            <p>Senioridade</p>
+
+            <input id="jr" type="radio" name="senioridade" checked>
+            <label for="jr">Júnior</label>
+
+            <input id="sr" type="radio" name="senioridade">
+            <label for="sr">Sênior</label>
+            
+            
+            <p>Área de atuação</p>
+
+            <input id="dev" type="radio" name="area">
+            <label for="dev">Desenvolvedor</label>
+
+            <input id="qa" type="radio" name="area" checked>
+            <label for="qa">QA</label>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+
+
+    <!-- <div id="btn-div" aria-labelledby="button" role="button">
+        Submit
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- <input name="cor-da-unha-da-boca-rosa" type="color" /> -->
+
+</body>
+
+</html>
