@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03</title>
+</head>
+<body>
+    <form method="get" action="https://www.w3schools.com/action_page.php">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+
+            <label for="nome">Nome</label>
+            <input id="nome" type="text" name="nome-completo" value="Banana" required>
+
+            <label for="idade">Idade</label>
+            <input id="idade" type="number" name="idade" value="28">
+
+            <label for="e-mail">E-mail</label>
+            <input id="e-mail" type="email" name="e-mail" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+
+            <p>Senioridade</p>
+            <input id="jr" type="radio" name="senioridade" value="jr">
+            <label for="jr">Júnior</label>
+
+            <input id="sr" type="radio" name="senioridade" value="sr">
+            <label for="sr">Sênior</label>
+            
+            
+            <p>Área de atuação</p>
+            <input id="dev" type="radio" name="area" value="dev">
+            <label for="dev">Desenvolvedor</label>
+
+            <input id="qa" type="radio" name="area" value="qa" checked>
+            <label for="qa">QA</label>
+            
+            <p>Skill</p>
+            <input id="s1" type="checkbox" name="skill" value="fazer cafe">
+            <label for="s1">Fazer café</label>
+
+            <input id="s2" type="checkbox" name="skill" value="puxar saco" checked>
+            <label for="s2">Puxar saco</label>
+            
+            <input id="s3" type="checkbox" name="skill" value="psic em dia" checked>
+            <label for="s3">Psiquiatra em dia</label>
+
+            <br><br>
+
+            <label for="tp-alimentacao">Tipo alimentação</label>
+            <select id="tp-alimentacao" name="tipo-alimentacao">
+                <option value="carnivoro">Carnivoro</option>
+                <option value="ovolact">Ovolactovegetariano</option>
+                <option value="vegano">Vegano</option>
+                <option value="vegetariano">Vegetariano</option>
+            </select>
+            
+            <br><br>
+
+            <label for="tp-veiculo">Tipo veículo</label>
+            <select id="tp-veiculo" name="tipo-veiculo" multiple>
+                <optgroup label="Terrestre">
+                    <option value="kiwid">Kiwid</option>
+                    <option value="argo">Argo</option>
+                    <option value="corolla">Corolla</option>
+                    <option value="charrete">Charrete</option>
+                    <option value="kombi">Kombi</option>
+                    <option value="motoquinha">Motoquinha</option>
+                </optgroup>
+                <optgroup label="Aéreo">
+                    <option value="mae">Mãe</option>
+                    <option value="pomba">Pomba</option>
+                    <option value="balao">Balão</option>
+                </optgroup>
+            </select>
+
+            <label for="consideracoes">Considerações</label>
+            <textarea id="consideracoes"></textarea>
+
+        </fieldset>
+
+        <!-- <input type="password" name="senha"> -->
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+
+
+    <a href="./links.html">ir para links</a>
+</body>
+</html>
