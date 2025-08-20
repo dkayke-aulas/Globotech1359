@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04 - Seletores CSS</title>
+    <style>
+        /* seletor global */
+        * {
+            color: blue;
+        }
+
+        /* seletor de elemento / por tag */
+        p {
+            color: magenta
+        }
+
+        p,
+        h1,
+        h2 {
+            font-size: 16px;
+        }
+
+        /* seletor por ID */
+        #banana {
+            color: crimson;
+        }
+
+        /* seletor de classe */
+        .cor-laranja {
+            color: orange;
+        }
+
+        .cor-magenta {
+            color: magenta;
+        }
+
+        .fonte-negrita {
+            font-weight: 700;
+        }
+
+        div {
+            background-color: grey;
+            height: 100px;
+            width: 100px;
+            border-radius: 12px;
+        }
+
+        /* seletor de descendencia */
+        div p {
+            color: yellow;
+        }
+
+        /* seletor descendencia direta */
+        div>p {
+            color: purple;
+        }
+
+        /* seletor irmão */
+        section ~ p {
+            color: indianred;
+        }
+
+        /* seletor irmão adjacente (imediatamente após) */
+        section + p {
+            color: black;
+        }
+
+        /* seletor por atributo */
+        [data-nome-completo] {
+            color: aqua;
+        }
+       
+        [data-nome-completo='Dannyel'] {
+            color: rgb(166, 0, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <p class="cor-magenta cor-laranja">esse é um P</p>
+    <p class="cor-laranja fonte-negrita">esse é um P</p>
+    <p>esse é um P</p>
+    <h1>esse é um h1</h1>
+    <p id="banana" class="cor-laranja">esse é um P que possui um ID</p>
+
+    <br>
+
+    <div>
+        <p>esse é o P1</p>
+        <span>
+            <p>esse é o P2</p>
+        </span>
+    </div>
+
+    <hr>
+
+    <p>esse é o P1 antes da section</p>
+    <section>
+        <p>esse é um P dentro da section</p>
+    </section>
+    <p>esse é o P1 depois da section</p>
+    <p>esse é o P2 depois da section</p>
+    <span>esse é um Span</span>
+    <p>esse é o P3 depois da section</p>
+
+    <hr>
+
+    <h2 data-nome-completo="banana">esse é um H2</h2>
+    <h2 data-nome-completo="Dannyel">esse é um H2</h2>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>

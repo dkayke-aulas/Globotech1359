@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04 - Tabelas</title>
+    <style>
+        table {
+            border-collapse: separate;
+            border: 2px solid red;
+        }
+
+        th,
+        td {
+            border: 2px solid darkblue;
+            text-align: center;
+        }
+
+        th {
+            background-color: #2dc37f;
+            vertical-align: center;
+        }
+
+        td {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>
+            Vendas do primeiro trimestre
+        </caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Produto</th>
+                <th colspan="3">Vendas</th>
+                <th rowspan="2">Total</th>
+            </tr>
+
+            <tr>
+                <th>Janeiro</th>
+                <th>Fevereiro</th>
+                <th>Março</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Arroz</td>
+                <td>10</td>
+                <td>20</td>
+                <td>50</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>Feijão</td>
+                <td>10</td>
+                <td>20</td>
+                <td>50</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>Açucar</td>
+                <td>10</td>
+                <td>20</td>
+                <td>50</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>Molho de tomate do elefante do Maurio de Souza</td>
+                <td colspan="2">10</td>
+                <td>50</td>
+                <td>80</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="10000">
+                    Dados fornecidos pela EDQM.
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
