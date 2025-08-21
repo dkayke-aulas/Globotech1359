@@ -75,6 +75,18 @@
         [data-nome-completo='Dannyel'] {
             color: rgb(166, 0, 255);
         }
+
+        input[type="password"] {
+            border: 2px solid tomato;
+        }
+
+        td {
+            border: 1px solid red;
+        }
+
+        td[colspan="1"]{
+            background-color: rgb(217, 255, 0);
+        }
     </style>
 </head>
 
@@ -109,6 +121,28 @@
 
     <h2 data-nome-completo="banana">esse é um H2</h2>
     <h2 data-nome-completo="Dannyel">esse é um H2</h2>
+
+    <hr>
+
+    <input type="text">
+    <input type="password">
+
+    <hr>
+
+    <table>
+        <tr>
+            <td colspan="1">1</td>
+            <td colspan="2">2</td>
+            <td colspan="3">3</td>
+        </tr>
+        <tr>
+            <td>Banana 1n</td>
+            <td colspan="1">Banana 1</td>
+            <td colspan="1">Banana 1</td>
+            <td colspan="3">Banana 3</td>
+        </tr>
+    </table>
+
 
     <br>
     <br>
