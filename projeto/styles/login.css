@@ -1,0 +1,30 @@
+form {
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 16px;
+    border: 2px solid blueviolet;
+    border-radius: 12px;
+}
+
+form input {
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 12px;
+}
+
+form label {
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+form button {
+    background-color: blueviolet;
+    border: 1px solid rgb(172, 117, 223);
+    color: white;
+    border-radius: 4px;
+
+}
