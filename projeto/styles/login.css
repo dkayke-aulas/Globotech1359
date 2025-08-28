@@ -3,10 +3,14 @@ form {
     max-width: 500px;
     box-sizing: border-box;
     margin: 0 auto;
-    margin-top: 100px;
     padding: 16px;
     border: 2px solid blueviolet;
     border-radius: 12px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 form input {
@@ -26,5 +30,4 @@ form button {
     border: 1px solid rgb(172, 117, 223);
     color: white;
     border-radius: 4px;
-
 }

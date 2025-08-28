@@ -1,0 +1,101 @@
+body {
+    margin: 16px;
+}
+
+header {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid orange;
+    border-radius: 8px;
+}
+
+.container-logo {
+    display: flex;
+    align-items: center;
+    flex: 0.5;
+    /* background-color: aqua; */
+    justify-content: center;
+}
+
+.menu-navegavel {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    padding: 16px 0;
+    /* background-color: crimson; */
+    justify-content: space-between;
+}
+
+.menu-add-sair {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    /* background-color: cornflowerblue; */
+    justify-content: end;
+    padding-right: 16px;
+    gap: 20px;
+}
+
+.avatar {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: lightyellow;
+    border: 1px solid orange;
+}
+
+.logo {
+    height: 100%;
+}
+
+menu {
+    display: flex;
+    gap: 16px;
+}
+
+li {
+    font-weight: 600;
+    padding: 8px;
+    list-style: none;
+    border-radius: 4px;
+    border: 1px solid orange;
+}
+
+li.active,
+li:hover {
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+}
+
+.menu-suspenso {
+    position: relative;
+}
+
+.menu-content {
+    position: absolute;
+    background-color: #f1f1f1;
+    border: 1px solid orange;
+    border-radius: 4px;
+    right: 0;
+    /* top: 35px; */
+    display: none;
+}
+
+.menu-suspenso:hover .menu-content {
+    display: block;
+}
+
+.menu-content a {
+    display: block;
+    text-decoration: none;
+    padding: 8px;
+    color: black;
+}
+
+.menu-content a:hover {
+    background-color: orange;
+    color: white;
+}

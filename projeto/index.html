@@ -11,13 +11,15 @@
 
 <body>
 
-    <form>
+    <form onsubmit="return false">
         <label for="username">Usuário ou e-mail</label>
         <input id="username" name="username" type="text" />
         <input type="hidden">
         <label for="password"> Senha</label>
         <input id="password" name="password" type="password" />
-        <button>Entrar</button>
+        <button>
+            <a href="./pages/painel.html">Entrar</a>
+        </button>
     </form>
 </body>
 

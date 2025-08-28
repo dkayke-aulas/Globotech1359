@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+    <style>
+        body {
+            color: fuchsia;
+        }
+
+        .pai {
+            background-color: aquamarine;
+        }
+
+        .pai>div {
+            display: inline-block;
+            width: 33%;
+            background-color: blueviolet;
+        }
+
+        @media print  {
+            body {
+                color: black;
+            }
+
+            .pai>div:last-child {
+                display: none;
+            }
+        }
+
+
+        @media (max-width: 811px) {
+            .pai>div {
+                width: 100%;
+                background-color: coral;
+                margin-top: 10px;
+            }
+
+            .pai>div:first-child {
+                margin-top: 0;
+            }
+
+        }
+
+        /* @media (orientation: portrait), (min-width: 400px) {
+            body {
+                background-color: crimson;
+            }
+        }
+        @media (orientation: landscape) {
+            body {
+                background-color: blue;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="pai">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+
+</html>

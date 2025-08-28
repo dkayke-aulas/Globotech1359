@@ -4,3 +4,8 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+button > a {
+    text-decoration: none;
+    color: inherit;
+}
